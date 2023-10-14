@@ -1,6 +1,4 @@
-// import react from "react";
 import classes from "./ProductDetails.module.css";
-// import ProductData from "./ProductData";
 
 const ProductDetails = (props) => {
   const colorOptions = props.data.images.map((item, pos) => (
@@ -24,7 +22,6 @@ const ProductDetails = (props) => {
     <button
       onClick={() => props.onFeatureItemClick(pos)}
       key={pos}
-      // className={pos === 0 ? classes.active : ""}
       className={pos === props.currentSelectedFeature ? classes.active : ""}
     >
       {item}
@@ -32,32 +29,14 @@ const ProductDetails = (props) => {
   ));
   return (
     <div>
-      {/* <h1>{ProductData.title}</h1>
-      <p>{ProductData.desc}</p> */}
       <h1>{props.data.title}</h1>
       <p>{props.data.desc}</p>
       {colorName}
-      <div className={classes.colorWrapper}>
-        {/* <img
-          src={ProductData.images.black}
-          className={classes.activeColor}
-          alt="img"
-        />
-        <img src={ProductData.images.red} alt="img" />
-        <img src={ProductData.images.blue} alt="img" />
-        <img src={ProductData.images.purple} alt="img" />
-        <img src={ProductData.images.pink} alt="img" /> */}
-        {colorOptions}
-      </div>
+      <div className={classes.colorWrapper}>{colorOptions}</div>
       <p className={classes.features}>
         <span> Features </span>
       </p>
-      <div className={classes.btnWrapper}>
-        {features}
-        {/* <button className={`${classes.timeBtn} ${classes.active}`}>Time</button>
-        <button className={classes.active}>Time</button>
-        <button>Heart Rate</button> */}
-      </div>
+      <div className={classes.btnWrapper}>{features}</div>
       <button
         onClick={() =>
           alert(

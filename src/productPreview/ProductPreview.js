@@ -13,13 +13,6 @@ const ProductPreview = (props) => {
     <div className={classes.ProductPreview}>
       <div>
         <img src={props.currentPreviewImage} alt="img" />
-        {/* <p>
-          {currentHour}:{currentMinute}
-        </p> */}
-        {/* <div className={classes.heartRate}>
-          <i className="fa-solid fa-heart-pulse"></i>
-          <p>78</p>
-        </div> */}
         {props.showHeartBeat ? (
           <div className={classes.heartRate}>
             <i className="fa-solid fa-heart-pulse"></i>

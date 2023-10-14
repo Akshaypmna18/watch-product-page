@@ -9,15 +9,12 @@ import Footer from "./headerAndFooter/Footer";
 class App extends Component {
   state = {
     productData: ProductData,
-    // currentPreviewImage: ProductData.images[0].url,
     currentPreviewImagePos: 0,
     currentSelectedFeature: 0,
     showHeartBeat: false,
   };
 
   onColorOptionClick = (pos) => {
-    // const updatedPreviewImage = this.state.productData.images[pos].url;
-    // this.setState({ currentPreviewImage: updatedPreviewImage });
     this.setState({ currentPreviewImagePos: pos });
   };
 
