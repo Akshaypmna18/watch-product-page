@@ -1,7 +1,7 @@
-import black from "../assets/black.png";
-import red from "../assets/red.png";
-import blue from "../assets/blue.png";
-import purple from "../assets/purple.png";
+import black from "./assets/black.png";
+import red from "./assets/red.png";
+import blue from "./assets/blue.png";
+import purple from "./assets/purple.png";
 
 const ProductData = {
   title: "Apple Watch",

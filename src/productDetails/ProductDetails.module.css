@@ -42,7 +42,7 @@ button {
   border-radius: 5px;
   font-size: 0.75rem;
 }
-main > div > button {
+main > section > button {
   margin-top: 0.7rem;
   font-size: 1rem;
 }
@@ -73,7 +73,7 @@ main > div > button {
     margin-top: 0.5rem;
   }
 
-  main > div > button {
+  main > section > button {
     font-size: 1.25rem;
     margin-top: 1rem;
   }

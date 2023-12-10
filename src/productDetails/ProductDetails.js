@@ -28,7 +28,7 @@ const ProductDetails = (props) => {
     </button>
   ));
   return (
-    <div>
+    <section>
       <h1>{props.data.title}</h1>
       <p>{props.data.desc}</p>
       {colorName}
@@ -48,7 +48,7 @@ const ProductDetails = (props) => {
       >
         Buy now
       </button>
-    </div>
+    </section>
   );
 };
 

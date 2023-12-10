@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import ProductPreview from "./productPreview/ProductPreview";
 import ProductDetails from "./productDetails/ProductDetails";
-import ProductData from "./productData/ProductData";
+import ProductData from "./ProductData";
 import TopBar from "./headerAndFooter/TopBar";
 import Footer from "./headerAndFooter/Footer";
 
@@ -27,7 +27,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <section className="container">
         <TopBar />
         <main>
           <ProductPreview
@@ -47,7 +47,7 @@ class App extends Component {
           />
         </main>
         <Footer />
-      </div>
+      </section>
     );
   }
 }

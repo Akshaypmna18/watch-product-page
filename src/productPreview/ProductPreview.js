@@ -10,7 +10,7 @@ const ProductPreview = (props) => {
       ? new Date().getMinutes()
       : "0" + new Date().getMinutes();
   return (
-    <div className={classes.ProductPreview}>
+    <aside className={classes.ProductPreview}>
       <div>
         <img src={props.currentPreviewImage} alt="img" />
         {props.showHeartBeat ? (
@@ -24,7 +24,7 @@ const ProductPreview = (props) => {
           </p>
         )}
       </div>
-    </div>
+    </aside>
   );
 };
 
